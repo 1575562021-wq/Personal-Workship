@@ -1,0 +1,152 @@
+/* ==========================================================================
+   Base Reset & Defaults
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  color: var(--t-primary);
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--t-fast) var(--ease-out);
+}
+
+a:hover {
+  color: var(--c-figma-purple);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea, select {
+  font: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: var(--lh-tight);
+  color: var(--t-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(var(--fs-4xl), 6vw, var(--fs-7xl)); }
+h2 { font-size: clamp(var(--fs-3xl), 4vw, var(--fs-5xl)); letter-spacing: -0.02em; }
+h3 { font-size: var(--fs-2xl); letter-spacing: -0.01em; }
+h4 { font-size: var(--fs-xl); }
+h5 { font-size: var(--fs-lg); }
+h6 { font-size: var(--fs-md); }
+
+p {
+  line-height: var(--lh-relaxed);
+}
+
+code, pre {
+  font-family: var(--ff-mono);
+  font-size: 0.9em;
+}
+
+code {
+  background: var(--c-soft);
+  padding: 2px 6px;
+  border-radius: var(--r-1);
+  color: var(--c-figma-pink);
+}
+
+pre {
+  background: var(--c-charcoal);
+  color: var(--c-white);
+  padding: var(--s-4);
+  border-radius: var(--r-3);
+  overflow-x: auto;
+  line-height: var(--lh-snug);
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+::selection {
+  background: var(--c-figma-purple);
+  color: var(--c-white);
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--c-figma-purple);
+  outline-offset: 2px;
+  border-radius: var(--r-1);
+}
+
+/* Backgrounds */
+body.has-grid {
+  background-image:
+    radial-gradient(circle, rgba(13, 13, 13, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -12px -12px;
+}
+
+body.bg-soft {
+  background: var(--bg-soft);
+}
+
+body.bg-dark {
+  background: var(--c-charcoal);
+  color: var(--c-white);
+}
+
+body.bg-dark h1, body.bg-dark h2, body.bg-dark h3, body.bg-dark h4 {
+  color: var(--c-white);
+}
+
+/* Helpers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>从 0 到 1 设计落地页 · 个人作品集</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/avatar.svg" />
+</head>
+<body data-page="articles">
+  <nav class="top-nav">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark"></span>
+        <span data-site-brand>@yourname</span>
+      </a>
+      <div class="nav-links">
+        <a href="../works.html">作品</a>
+        <a href="../articles.html">文章</a>
+        <a href="../albums.html">相册</a>
+        <a href="../videos.html">视频</a>
+        <a href="../documents.html">文档</a>
+        <a href="../presentations.html">PPT</a>
+        <a href="../about.html">关于</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <section class="detail-page">
+    <div class="container container-narrow">
+
+      <a class="back" href="../articles.html">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        返回文章列表
+      </a>
+
+      <div class="detail-header">
+        <h1>从 0 到 1 设计落地页</h1>
+        <p class="subtitle">B2B SaaS 落地页设计实践</p>
+
+        <div class="detail-meta">
+          <span class="tag tag-dark">产品设计</span> <span class="tag tag-mint">B 端</span>
+          <span class="dot"></span>
+          <span>2024-07-01</span>
+          <span class="dot"></span>
+          <span>10 分钟阅读</span>
+          <span class="dot"></span>
+          <span>你的名字</span>
+        </div>
+      </div>
+
+      <div class="detail-cover">
+        <img src="../assets/images/articles/cover-4.svg" alt="从 0 到 1 设计落地页" />
+      </div>
+
+      <article class="detail-content">
+        <p style="font-size: 17px; line-height: 1.7; color: var(--t-secondary);">落地页是产品的第一道门面。本文以一个 B2B SaaS 项目为例，介绍从信息架构、文案到视觉的完整设计流程。</p>
+
+        <h2>引言</h2>
+        <p>在文章开头简要说明要讨论的问题、为什么重要、你打算怎么切入。</p>
+
+        <h2>第一部分：背景与动机</h2>
+        <p>铺垫必要的背景知识。可以引用数据、案例、研究。</p>
+        <blockquote>关键的洞察用引用块展示，视觉上更突出。</blockquote>
+
+        <h2>第二部分：方法论</h2>
+        <p>详细描述你用的方法、流程、工具。可以分步骤说明：</p>
+        <ol>
+          <li><strong>步骤一：</strong>具体做什么、为什么</li>
+          <li><strong>步骤二：</strong>具体做什么、为什么</li>
+          <li><strong>步骤三：</strong>具体做什么、为什么</li>
+        </ol>
+
+        <h2>第三部分：案例与实践</h2>
+        <p>用真实案例说明方法的应用。可以包含：</p>
+        <ul>
+          <li>项目背景与目标</li>
+          <li>执行过程</li>
+          <li>结果与反思</li>
+        </ul>
+
+        <div class="callout">
+          <strong>💡 关键提示：</strong>重要的内容用 callout 框突出显示。
+        </div>
+
+        <h2>总结</h2>
+        <p>总结要点、给读者的建议、延伸阅读。保持简洁。</p>
+
+        <h2>参考资料</h2>
+        <ul>
+          <li>相关书籍 / 论文</li>
+          <li>延伸阅读链接</li>
+          <li>工具与模板下载</li>
+        </ul>
+      </article>
+
+      <div style="margin-top: 64px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a class="btn btn-ghost" href="../articles.html">← 返回文章列表</a>
+      </div>
+    </div>
+  </section>  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: 0; padding-top: 0;">
+        <span>© 2024 <span data-site-brand>@yourname</span>.</span>
+        <span><a href="../index.html">返回首页</a></span>
+      </div>
+    </div>
+  </footer>  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/filter.js"></script>
+  <script src="../assets/js/carousel.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

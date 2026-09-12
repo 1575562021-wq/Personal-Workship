@@ -1,0 +1,64 @@
+{
+  "videos": [
+    {
+      "id": "design-thinking",
+      "title": "设计思维分享：从洞察到落地",
+      "cover": "assets/images/videos/cover-1.svg",
+      "platform": "bilibili",
+      "embed_url": "//player.bilibili.com/player.html?bvid=BV1xx411c7mD&autoplay=0",
+      "youtube_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "12:30",
+      "description": "设计思维不只是设计。分享如何用设计思维的方法解决产品中的真实问题。"
+    },
+    {
+      "id": "pm-daily",
+      "title": "产品经理的一天 vlog",
+      "cover": "assets/images/videos/cover-2.svg",
+      "platform": "bilibili",
+      "embed_url": "//player.bilibili.com/player.html?bvid=BV1xx411c7mE&autoplay=0",
+      "youtube_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "08:45",
+      "description": "记录产品实习生的真实一天：晨会、需求评审、原型设计、用户访谈。"
+    },
+    {
+      "id": "user-research-method",
+      "title": "用户研究方法论详解",
+      "cover": "assets/images/videos/cover-3.svg",
+      "platform": "youtube",
+      "embed_url": "//player.bilibili.com/player.html?bvid=BV1xx411c7mF&autoplay=0",
+      "youtube_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "15:20",
+      "description": "用户访谈、可用性测试、问卷设计：A/B test。系统的用户研究方法论。"
+    },
+    {
+      "id": "figma-advanced",
+      "title": "Figma 进阶：Auto Layout 与 Variables",
+      "cover": "assets/images/videos/cover-4.svg",
+      "platform": "bilibili",
+      "embed_url": "//player.bilibili.com/player.html?bvid=BV1xx411c7mG&autoplay=0",
+      "youtube_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "22:10",
+      "description": "Figma 进阶技巧：Auto Layout 高级用法、Variables、Components 工作流。"
+    },
+    {
+      "id": "growth-team",
+      "title": "如何搭建一个增长团队",
+      "cover": "assets/images/videos/cover-5.svg",
+      "platform": "bilibili",
+      "embed_url": "//player.bilibili.com/player.html?bvid=BV1xx411c7mH&autoplay=0",
+      "youtube_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "18:00",
+      "description": "增长团队的角色分工、协作流程、考核指标。"
+    },
+    {
+      "id": "prd-writing",
+      "title": "PRD 写作指南",
+      "cover": "assets/images/videos/cover-6.svg",
+      "platform": "youtube",
+      "embed_url": "//player.bilibili.com/player.html?bvid=BV1xx411c7mI&autoplay=0",
+      "youtube_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "duration": "10:30",
+      "description": "从信息架构到细节验收：写一份开发爱看的 PRD。"
+    }
+  ]
+}

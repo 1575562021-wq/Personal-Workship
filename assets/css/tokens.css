@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Design Tokens — Figma-inspired Palette
+   ========================================================================== */
+
+:root {
+  /* === Color: Neutral === */
+  --c-black: #000000;
+  --c-ink: #1A1A1A;
+  --c-charcoal: #0D0D0D;
+  --c-graphite: #2C2C2C;
+  --c-slate: #6B6B6B;
+  --c-silver: #A8A8A8;
+  --c-mist: #D4D4D4;
+  --c-line: #E5E5E5;
+  --c-soft: #F0F0F0;
+  --c-paper: #F7F7F7;
+  --c-white: #FFFFFF;
+
+  /* === Color: Figma Brand === */
+  --c-figma-purple: #A259FF;
+  --c-figma-pink: #FF7262;
+  --c-figma-blue: #1ABCFE;
+  --c-figma-mint: #0ACF83;
+  --c-figma-yellow: #FFCB05;
+  --c-figma-orange: #F24E1E;
+
+  /* === Gradients === */
+  --g-figma: linear-gradient(135deg, #A259FF 0%, #FF7262 50%, #1ABCFE 100%);
+  --g-figma-soft: linear-gradient(135deg, rgba(162, 89, 255, 0.12) 0%, rgba(255, 114, 98, 0.10) 50%, rgba(26, 188, 254, 0.12) 100%);
+  --g-purple-pink: linear-gradient(135deg, #A259FF 0%, #FF7262 100%);
+  --g-pink-blue: linear-gradient(135deg, #FF7262 0%, #1ABCFE 100%);
+  --g-purple-blue: linear-gradient(135deg, #A259FF 0%, #1ABCFE 100%);
+  --g-dark: linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 100%);
+
+  /* === Text === */
+  --t-primary: var(--c-charcoal);
+  --t-secondary: var(--c-slate);
+  --t-tertiary: var(--c-silver);
+  --t-inverse: var(--c-white);
+  --t-link: var(--c-figma-purple);
+
+  /* === Background === */
+  --bg-page: var(--c-white);
+  --bg-soft: var(--c-paper);
+  --bg-card: var(--c-white);
+  --bg-inverse: var(--c-charcoal);
+
+  /* === Border === */
+  --bd-line: var(--c-line);
+  --bd-strong: var(--c-charcoal);
+  --bd-focus: var(--c-figma-purple);
+
+  /* === Tag colors === */
+  --tag-purple-bg: rgba(162, 89, 255, 0.10);
+  --tag-purple-fg: #7B3FE4;
+  --tag-pink-bg: rgba(255, 114, 98, 0.10);
+  --tag-pink-fg: #E14B3A;
+  --tag-blue-bg: rgba(26, 188, 254, 0.10);
+  --tag-blue-fg: #0E8DC4;
+  --tag-mint-bg: rgba(10, 207, 131, 0.10);
+  --tag-mint-fg: #08A86A;
+  --tag-yellow-bg: rgba(255, 203, 5, 0.15);
+  --tag-yellow-fg: #B58E00;
+  --tag-dark-bg: rgba(13, 13, 13, 0.08);
+  --tag-dark-fg: var(--c-charcoal);
+
+  /* === Spacing === */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-20: 80px;
+  --s-24: 96px;
+  --s-32: 128px;
+
+  /* === Radius === */
+  --r-1: 4px;
+  --r-2: 8px;
+  --r-3: 12px;
+  --r-4: 16px;
+  --r-5: 20px;
+  --r-6: 24px;
+  --r-full: 999px;
+
+  /* === Shadows === */
+  --sh-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --sh-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --sh-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --sh-lg: 0 12px 32px rgba(0, 0, 0, 0.10);
+  --sh-xl: 0 24px 64px rgba(0, 0, 0, 0.14);
+  --sh-glow: 0 0 0 4px rgba(162, 89, 255, 0.12);
+
+  /* === Typography === */
+  --ff-sans: "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  --ff-mono: "JetBrains Mono", "Fira Code", "SF Mono", Menlo, Consolas, monospace;
+  --ff-display: "Inter", -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 15px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 32px;
+  --fs-4xl: 40px;
+  --fs-5xl: 56px;
+  --fs-6xl: 72px;
+  --fs-7xl: 96px;
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.3;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.7;
+
+  /* === Layout === */
+  --container-max: 1200px;
+  --container-wide: 1400px;
+  --container-narrow: 800px;
+  --nav-height: 64px;
+
+  /* === Motion === */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 0.15s;
+  --t-base: 0.25s;
+  --t-slow: 0.4s;
+
+  /* === Z-index === */
+  --z-nav: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

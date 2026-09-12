@@ -1,0 +1,12 @@
+{
+  "cdn_domain": "https://cdn.yourname.com",
+  "image_base": "https://cdn.yourname.com/images",
+  "video_base": "https://cdn.yourname.com/videos",
+  "doc_base": "https://cdn.yourname.com/docs",
+  "image_format": "webp",
+  "max_image_size_kb": 500,
+  "cdn_provider": "qiniu",
+  "fallback_to_local": true,
+  "auto_optimize": true,
+  "watermark": false
+}

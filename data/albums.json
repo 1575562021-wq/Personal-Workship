@@ -1,0 +1,61 @@
+{
+  "albums": [
+    {
+      "id": "iceland",
+      "title": "冰岛极光之旅",
+      "tag": "旅行",
+      "date": "2024-08",
+      "description": "8 月的冰岛，自驾环岛 12 天。雷克雅未克的彩色屋顶、瓦特纳冰川的徒步、黑沙滩的日落、和一晚在帐篷里等到的极光。",
+      "cover": "assets/images/albums/iceland/cover.svg",
+      "url": "albums/iceland.html",
+      "photos": [
+        { "src": "assets/images/albums/iceland/01.svg", "caption": "首都雷克雅未克的清晨" },
+        { "src": "assets/images/albums/iceland/02.svg", "caption": "北极光下的营地（凌晨 2 点）" },
+        { "src": "assets/images/albums/iceland/03.svg", "caption": "瓦特纳冰川徒步" },
+        { "src": "assets/images/albums/iceland/04.svg", "caption": "斯科加瀑布" },
+        { "src": "assets/images/albums/iceland/05.svg", "caption": "维克镇黑沙滩" },
+        { "src": "assets/images/albums/iceland/06.svg", "caption": "太阳航行者雕塑" },
+        { "src": "assets/images/albums/iceland/07.svg", "caption": "哈尔格林姆教堂" },
+        { "src": "assets/images/albums/iceland/08.svg", "caption": "蓝湖温泉" }
+      ]
+    },
+    {
+      "id": "daily",
+      "title": "日常生活碎片",
+      "tag": "日常",
+      "date": "2024-10",
+      "description": "用 iPhone 随手记录日常。咖啡、工作台、傍晚的窗台、和朋友的小聚。",
+      "cover": "assets/images/albums/daily/cover.svg",
+      "url": "albums/daily.html",
+      "photos": [
+        { "src": "assets/images/albums/daily/01.svg", "caption": "早晨的第一缕光" },
+        { "src": "assets/images/albums/daily/02.svg", "caption": "周末的咖啡与三明治" },
+        { "src": "assets/images/albums/daily/03.svg", "caption": "居家办公空间" },
+        { "src": "assets/images/albums/daily/04.svg", "caption": "枕边读物" },
+        { "src": "assets/images/albums/daily/05.svg", "caption": "傍晚的窗台" },
+        { "src": "assets/images/albums/daily/06.svg", "caption": "朋友小聚" },
+        { "src": "assets/images/albums/daily/07.svg", "caption": "城市街景" },
+        { "src": "assets/images/albums/daily/08.svg", "caption": "周末的散步" }
+      ]
+    },
+    {
+      "id": "design",
+      "title": "设计灵感合集",
+      "tag": "设计灵感",
+      "date": "2024-09",
+      "description": "平时收藏的设计参考：字体、色彩、版式、质感。",
+      "cover": "assets/images/albums/design/cover.svg",
+      "url": "albums/design.html",
+      "photos": [
+        { "src": "assets/images/albums/design/01.svg", "caption": "字体研究参考" },
+        { "src": "assets/images/albums/design/02.svg", "caption": "色彩搭配灵感" },
+        { "src": "assets/images/albums/design/03.svg", "caption": "版式与栅格" },
+        { "src": "assets/images/albums/design/04.svg", "caption": "质感与材质" },
+        { "src": "assets/images/albums/design/05.svg", "caption": "网格系统研究" },
+        { "src": "assets/images/albums/design/06.svg", "caption": "图标设计参考" },
+        { "src": "assets/images/albums/design/07.svg", "caption": "品牌设计案例" },
+        { "src": "assets/images/albums/design/08.svg", "caption": "印刷工艺" }
+      ]
+    }
+  ]
+}

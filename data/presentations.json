@@ -1,0 +1,34 @@
+{
+  "presentations": [
+    {
+      "id": "crm-redesign-ppt",
+      "title": "CRM 体验升级方案",
+      "slides": 24,
+      "date": "2024-09",
+      "tag": "B 端",
+      "cover": "assets/images/ppt-cover.svg",
+      "url": "presentations/crm-redesign-ppt.html",
+      "description": "B 端 CRM 体验升级的完整方案：背景、调研、洞察、方案、计划。"
+    },
+    {
+      "id": "growth-ppt",
+      "title": "新手引导增长实验复盘",
+      "slides": 18,
+      "date": "2024-07",
+      "tag": "增长",
+      "cover": "assets/images/ppt-cover.svg",
+      "url": "presentations/growth-ppt.html",
+      "description": "6 轮 A/B 实验的复盘分享：假设、实验、数据、结论。"
+    },
+    {
+      "id": "ux-workshop",
+      "title": "UX 工作坊 · 校园场",
+      "slides": 32,
+      "date": "2024-04",
+      "tag": "用户研究",
+      "cover": "assets/images/ppt-cover.svg",
+      "url": "presentations/ux-workshop.html",
+      "description": "面向校园同学的 UX 工作坊：设计思维、用户访谈、原型设计。"
+    }
+  ]
+}

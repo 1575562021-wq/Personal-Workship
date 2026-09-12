@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品 · 个人作品集</title>
+  <meta name="description" content="完整的产品作品集：从用户研究到设计落地的全过程。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg" />
+</head>
+<body data-page="works">
+
+  <!-- Top Nav -->
+  <nav class="top-nav">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span data-site-brand>@yourname</span>
+      </a>
+      <div class="nav-links">
+        <a href="works.html">作品</a>
+        <a href="articles.html">文章</a>
+        <a href="albums.html">相册</a>
+        <a href="videos.html">视频</a>
+        <a href="documents.html">文档</a>
+        <a href="presentations.html">PPT</a>
+        <a href="about.html">关于</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Compact Hero -->
+  <section class="hero-compact">
+    <div class="container">
+      <div class="avatar" data-site-avatar>
+        <img src="assets/images/avatar.svg" alt="avatar" />
+      </div>
+      <div style="flex: 1; min-width: 280px;">
+        <h1>作品集</h1>
+        <p class="sub" data-site-tagline>产品设计 / 用户研究 / 增长探索</p>
+        <div class="meta">
+          <a href="index.html">← 返回首页</a>
+          <span>·</span>
+          <span data-site-school>XX 大学</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works List -->
+  <section class="section" style="padding-top: 32px;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">All Works</span>
+        <h2>所有作品</h2>
+        <p>点击进入作品详情，查看完整复盘、原型和文档。</p>
+      </div>
+
+      <!-- Filter (auto-populated by main.js) -->
+      <div class="filter-bar reveal"></div>
+
+      <div id="works-list" class="reveal"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: 0; padding-top: 0;">
+        <span>© 2024 <span data-site-brand>@yourname</span>.</span>
+        <span><a href="index.html">返回首页</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

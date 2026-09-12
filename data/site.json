@@ -1,0 +1,90 @@
+{
+  "name": "你的名字",
+  "tagline": "产品设计 / 用户研究 / 增长探索",
+  "school": "XX 大学 · 信息管理与信息系统",
+  "grade": "大四 · 2025 届",
+  "email": "your@email.com",
+  "github": "https://github.com/yourname",
+  "linkedin": "https://linkedin.com/in/yourname",
+  "twitter": "https://twitter.com/yourname",
+  "zhihu": "https://www.zhihu.com/people/yourname",
+  "wechat_id": "your-wechat-id",
+  "wechat_qr": "assets/images/wechat-qr.svg",
+  "avatar": "assets/images/avatar.svg",
+  "bio": "热爱用产品和设计的语言解决真实问题。关注 B 端工具、用户研究和增长实验。在校期间主导 3 个 0-1 项目，DAU 从 0 增长到 1.2 万。希望把用户的声音翻译成可落地的方案。",
+  "location": "上海 · 北京",
+  "status": "Open to opportunities · 2025 校招",
+  "education": [
+    {
+      "year": "2021 - 2025",
+      "school": "XX 大学",
+      "major": "信息管理与信息系统",
+      "degree": "本科",
+      "desc": "GPA 3.8/4.0，专业前 5%。主修信息系统设计、用户行为分析、数据挖掘。担任产品设计协会会长，组织 12 场工作坊。"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2024.06 - 2024.09",
+      "role": "产品实习生",
+      "company": "某 SaaS 公司",
+      "desc": "负责 CRM 模块的需求调研、原型设计和用户测试。主导 3 个核心流程的重构，新手转化率提升 28%。"
+    },
+    {
+      "period": "2023.12 - 2024.03",
+      "role": "用户研究 Lead",
+      "company": "校园创业项目",
+      "desc": "带领 5 人团队完成 32 位目标用户的深度访谈，输出产品定位与核心功能 MVP。"
+    },
+    {
+      "period": "2023.07 - 2023.09",
+      "role": "设计实习生",
+      "company": "某互联网大厂",
+      "desc": "参与 B 端 Dashboard 项目，负责数据可视化与交互规范的撰写。"
+    }
+  ],
+  "skills": [
+    {
+      "category": "产品",
+      "items": ["需求分析", "PRD 撰写", "用户故事", "产品 Roadmap", "数据驱动决策"]
+    },
+    {
+      "category": "设计",
+      "items": ["Figma", "Sketch", "Principle", "Protopie", "Design System"]
+    },
+    {
+      "category": "研究",
+      "items": ["用户访谈", "可用性测试", "问卷设计", "竞品分析", "Affinity Diagram"]
+    },
+    {
+      "category": "数据 & 编程",
+      "items": ["SQL", "Python", "Mixpanel", "神策", "Google Analytics", "A/B Testing"]
+    },
+    {
+      "category": "其他",
+      "items": ["Notion", "飞书", "Jira", "Confluence", "Miro"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "互联网+ 大学生创新创业大赛 国赛银奖",
+      "org": "教育部",
+      "year": "2024"
+    },
+    {
+      "title": "UX 设计大赛 全国一等奖",
+      "org": "UXPA 中国",
+      "year": "2023"
+    },
+    {
+      "title": "校级产品设计挑战赛 冠军",
+      "org": "XX 大学",
+      "year": "2023"
+    },
+    {
+      "title": "国家奖学金",
+      "org": "教育部",
+      "year": "2022"
+    }
+  ]
+}

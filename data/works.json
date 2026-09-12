@@ -1,0 +1,83 @@
+{
+  "works": [
+    {
+      "id": "product-redesign",
+      "title": "B 端 CRM 体验升级",
+      "subtitle": "从用户研究到落地改版的完整记录",
+      "cover": "assets/images/works/cover-1.svg",
+      "tags": ["产品设计", "B 端", "用户研究"],
+      "category": "product",
+      "date": "2024-09",
+      "summary": "在 3 个月内主导 CRM 模块的体验升级，完成 32 位用户访谈、5 轮原型迭代，最终核心流程转化率提升 28%。",
+      "url": "works/product-redesign.html",
+      "featured": true,
+      "external_links": [
+        { "label": "查看 Figma 原型", "url": "https://figma.com" },
+        { "label": "项目复盘文章", "url": "articles/article-template.html" }
+      ]
+    },
+    {
+      "id": "growth-experiment",
+      "title": "新手引导增长实验",
+      "subtitle": "用 A/B 测试找到最优引导路径",
+      "cover": "assets/images/works/cover-3.svg",
+      "tags": ["产品设计", "增长", "数据"],
+      "category": "growth",
+      "date": "2024-07",
+      "summary": "通过 6 轮 A/B 实验，将 7 日留存从 18% 提升到 31%。系统化梳理了引导流程的设计变量。",
+      "url": "works/growth-experiment.html",
+      "featured": true,
+      "external_links": [
+        { "label": "实验数据表", "url": "#" }
+      ]
+    },
+    {
+      "id": "user-research",
+      "title": "校园工具用户研究",
+      "subtitle": "32 位深度访谈后的产品定位",
+      "cover": "assets/images/works/cover-2.svg",
+      "tags": ["用户研究", "数据", "C 端"],
+      "category": "research",
+      "date": "2024-05",
+      "summary": "组织 5 人研究团队，3 周完成 32 位大学生的深度访谈，输出用户画像与核心需求金字塔。",
+      "url": "works/user-research.html",
+      "featured": true,
+      "external_links": [
+        { "label": "完整研究报告", "url": "documents.html" }
+      ]
+    },
+    {
+      "id": "dashboard-design",
+      "title": "数据 Dashboard 重构",
+      "subtitle": "从信息密度到信息清晰",
+      "cover": "assets/images/works/cover-5.svg",
+      "tags": ["产品设计", "B 端", "数据"],
+      "category": "design",
+      "date": "2024-03",
+      "summary": "为 B 端管理后台重构数据可视化模块，建立组件库，统一 12 种图表的设计规范。",
+      "url": "works/dashboard-design.html"
+    },
+    {
+      "id": "crm-system",
+      "title": "客户管理系统重构",
+      "subtitle": "B 端工作流全面优化",
+      "cover": "assets/images/works/cover-4.svg",
+      "tags": ["产品设计", "B 端"],
+      "category": "product",
+      "date": "2024-01",
+      "summary": "重构企业 CRM 系统的核心业务流程，沉淀 8 个核心模块的设计方案。",
+      "url": "works/crm-system.html"
+    },
+    {
+      "id": "competitor-analysis",
+      "title": "工具类产品竞品分析",
+      "subtitle": "Notion vs Coda vs飞书",
+      "cover": "assets/images/works/cover-6.svg",
+      "tags": ["用户研究", "产品设计"],
+      "category": "research",
+      "date": "2023-11",
+      "summary": "对 6 款主流协作工具进行 2 个月深度调研，输出 60 页竞品分析报告。",
+      "url": "works/competitor-analysis.html"
+    }
+  ]
+}

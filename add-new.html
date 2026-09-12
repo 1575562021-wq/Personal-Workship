@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>添加新作品 · 个人作品集</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg" />
+</head>
+<body data-page="add-new">
+
+  <nav class="top-nav">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span data-site-brand>@yourname</span>
+      </a>
+      <div class="nav-links">
+        <a href="works.html">作品</a>
+        <a href="articles.html">文章</a>
+        <a href="albums.html">相册</a>
+        <a href="videos.html">视频</a>
+        <a href="documents.html">文档</a>
+        <a href="presentations.html">PPT</a>
+        <a href="about.html">关于</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero-compact">
+    <div class="container">
+      <div class="avatar" data-site-avatar>
+        <img src="assets/images/avatar.svg" alt="avatar" />
+      </div>
+      <div style="flex: 1; min-width: 280px;">
+        <h1>添加新作品</h1>
+        <p class="sub">教程：3 步发布新内容到作品集</p>
+        <div class="meta">
+          <a href="index.html">← 返回首页</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 32px;">
+    <div class="container container-narrow">
+
+      <div class="reveal" style="margin-bottom: 32px;">
+        <p style="font-size: 17px; line-height: 1.7; color: var(--t-secondary);">
+          本作品集是<strong>纯静态 + 数据驱动</strong>架构。所有内容从 <code>data/*.json</code> 读取，添加新作品/文章/相册只需要 3 步：上传文件 → 编辑 JSON → 推送到 GitHub。
+        </p>
+      </div>
+
+      <!-- Steps -->
+      <div class="step-list">
+        <div class="step-item reveal">
+          <span class="step-num">1</span>
+          <h3>上传文件到云存储</h3>
+          <p>把图片、视频、文档、PDF 上传到云存储（推荐七牛云/又拍云，国内访问快）。</p>
+          <p>详细配置步骤见 <a href="UPLOAD-GUIDE.html" target="_blank">UPLOAD-GUIDE.md</a>。</p>
+          <div class="info-box">
+            <strong>📁 推荐云存储：</strong>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+              <li>七牛云（每月 10GB 免费）</li>
+              <li>又拍云（每月 15GB 免费）</li>
+              <li>腾讯云 COS / 阿里云 OSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item reveal">
+          <span class="step-num">2</span>
+          <h3>编辑对应的 JSON 数据</h3>
+          <p>在 <code>data/</code> 目录下编辑对应类型的 JSON 文件，添加新内容。</p>
+          <p>JSON 文件路径和示例：</p>
+          <pre><code>data/works.json      # 作品
+data/articles.json   # 文章
+data/albums.json     # 相册
+data/videos.json     # 视频
+data/documents.json  # 文档
+data/presentations.json  # PPT</code></pre>
+        </div>
+
+        <div class="step-item reveal">
+          <span class="step-num">3</span>
+          <h3>提交到 GitHub</h3>
+          <p>本地预览后，提交代码到 GitHub，自动部署到 GitHub Pages。</p>
+          <pre><code>git add .
+git commit -m "添加新作品: product-redesign"
+git push origin main</code></pre>
+          <p>推送后 1-2 分钟内网站自动更新。</p>
+        </div>
+      </div>
+
+      <!-- JSON Templates -->
+      <div class="reveal" style="margin-top: 64px;">
+        <h2 style="font-size: 24px; margin-bottom: 24px;">JSON 模板</h2>
+
+        <h3 style="font-size: 18px; margin-top: 24px; margin-bottom: 12px;">🎨 作品</h3>
+        <pre><code>{
+  "id": "my-new-work",
+  "title": "作品标题",
+  "subtitle": "副标题",
+  "cover": "https://your-cdn.com/cover.jpg",
+  "tags": ["产品设计", "B 端"],
+  "category": "product",
+  "date": "2024-12",
+  "summary": "一句话简介",
+  "url": "works/my-new-work.html",
+  "featured": true,
+  "external_links": [
+    { "label": "查看原型", "url": "https://figma.com/..." }
+  ]
+}</code></pre>
+
+        <h3 style="font-size: 18px; margin-top: 32px; margin-bottom: 12px;">📝 文章</h3>
+        <pre><code>{
+  "id": "my-article",
+  "title": "文章标题",
+  "subtitle": "副标题",
+  "excerpt": "摘要",
+  "cover": "https://your-cdn.com/cover.jpg",
+  "tags": ["方法论"],
+  "date": "2024-12-01",
+  "read_time": "10 分钟阅读",
+  "author": "你的名字",
+  "url": "articles/my-article.html"
+}</code></pre>
+
+        <h3 style="font-size: 18px; margin-top: 32px; margin-bottom: 12px;">📷 相册</h3>
+        <pre><code>{
+  "id": "my-album",
+  "title": "相册标题",
+  "tag": "旅行",
+  "date": "2024-12",
+  "description": "描述",
+  "cover": "https://your-cdn.com/cover.jpg",
+  "url": "albums/my-album.html",
+  "photos": [
+    { "src": "https://your-cdn.com/01.jpg", "caption": "图 1" },
+    { "src": "https://your-cdn.com/02.jpg", "caption": "图 2" },
+    ...  // 至少 8 张
+  ]
+}</code></pre>
+
+        <h3 style="font-size: 18px; margin-top: 32px; margin-bottom: 12px;">🎬 视频</h3>
+        <pre><code>{
+  "id": "my-video",
+  "title": "视频标题",
+  "cover": "https://your-cdn.com/cover.jpg",
+  "platform": "bilibili",
+  "embed_url": "//player.bilibili.com/player.html?bvid=XXX",
+  "youtube_url": "https://www.youtube.com/embed/XXX",
+  "duration": "12:30",
+  "description": "描述"
+}</code></pre>
+
+        <h3 style="font-size: 18px; margin-top: 32px; margin-bottom: 12px;">📄 文档</h3>
+        <pre><code>{
+  "id": "my-doc",
+  "title": "文档标题",
+  "type": "pdf",
+  "size": "2.4 MB",
+  "date": "2024-12",
+  "url": "https://your-cdn.com/file.pdf",
+  "preview_url": "https://docs.google.com/viewer?url=https://your-cdn.com/file.pdf",
+  "cover": "assets/images/doc-cover.svg",
+  "description": "描述"
+}</code></pre>
+
+        <h3 style="font-size: 18px; margin-top: 32px; margin-bottom: 12px;">📊 PPT</h3>
+        <pre><code>{
+  "id": "my-ppt",
+  "title": "PPT 标题",
+  "slides": 24,
+  "date": "2024-12",
+  "tag": "B 端",
+  "cover": "https://your-cdn.com/cover.jpg",
+  "url": "presentations/my-ppt.html",
+  "description": "描述"
+}</code></pre>
+      </div>
+
+      <!-- File naming -->
+      <div class="reveal" style="margin-top: 64px;">
+        <h2 style="font-size: 24px; margin-bottom: 24px;">文件命名规范</h2>
+        <div class="info-box">
+          <strong>📂 推荐目录结构：</strong>
+          <pre style="margin-top: 12px;"><code>assets/images/works/{work-id}/cover.jpg      # 作品封面
+assets/images/works/{work-id}/01.jpg         # 作品配图
+assets/images/albums/{album-id}/01.jpg       # 相册照片
+assets/images/articles/{article-id}/cover.jpg  # 文章封面
+assets/images/videos/{video-id}/cover.jpg    # 视频封面</code></pre>
+        </div>
+        <ul style="margin-top: 16px; padding-left: 20px; color: var(--t-secondary); line-height: 1.8;">
+          <li>使用小写字母 + 数字 + 连字符（<code>kebab-case</code>）</li>
+          <li>图片优先使用 WebP 或压缩后的 JPG（&lt; 200KB）</li>
+          <li>不使用中文文件名（避免编码问题）</li>
+        </ul>
+      </div>
+
+      <!-- Local preview -->
+      <div class="reveal" style="margin-top: 64px;">
+        <h2 style="font-size: 24px; margin-bottom: 24px;">本地预览</h2>
+        <p>由于使用了 <code>fetch()</code> 加载 JSON，<strong>必须用 HTTP 服务器预览</strong>，不能直接双击 HTML。</p>
+        <pre><code># Python 3
+python -m http.server 8000
+
+# Node.js
+npx serve .
+
+# VS Code
+安装 Live Server 插件，右键 → Open with Live Server</code></pre>
+        <p style="margin-top: 16px;">然后浏览器打开 <code>http://localhost:8000</code>。</p>
+      </div>
+
+      <!-- Next steps -->
+      <div class="reveal" style="margin-top: 64px; padding: 32px; background: var(--g-figma-soft); border-radius: 16px; border-left: 4px solid var(--c-figma-purple);">
+        <h3 style="font-size: 20px; margin-bottom: 12px;">📚 相关文档</h3>
+        <ul style="list-style: none; padding: 0; line-height: 2;">
+          <li>📖 <a href="README.html">README</a> — 项目总览</li>
+          <li>🚀 <a href="DEPLOY.html">DEPLOY</a> — 部署到 GitHub Pages</li>
+          <li>📤 <a href="UPLOAD-GUIDE.html">UPLOAD-GUIDE</a> — 文件上传与云存储配置</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: 0; padding-top: 0;">
+        <span>© 2024 <span data-site-brand>@yourname</span>.</span>
+        <span><a href="index.html">返回首页</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

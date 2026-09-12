@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人作品集</title>
+  <meta name="description" content="产品设计 / 用户研究 / 增长探索 — 个人作品集" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/avatar.svg" />
+
+  <style>
+    /* Page-specific dot grid */
+    body { background-image: radial-gradient(circle, rgba(13,13,13,0.05) 1px, transparent 1px); background-size: 24px 24px; }
+  </style>
+</head>
+<body data-page="home">
+
+  <!-- ============= Top Nav ============= -->
+  <nav class="top-nav">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span data-site-brand>@yourname</span>
+      </a>
+      <div class="nav-links">
+        <a href="works.html">作品</a>
+        <a href="articles.html">文章</a>
+        <a href="albums.html">相册</a>
+        <a href="videos.html">视频</a>
+        <a href="documents.html">文档</a>
+        <a href="presentations.html">PPT</a>
+        <a href="about.html">关于</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============= Hero ============= -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <!-- Left: Text -->
+        <div>
+          <span class="hero-eyebrow">
+            <span class="dot"></span>
+            <span data-site-status>Open to opportunities · 2025 校招</span>
+          </span>
+          <h1>
+            Hi, I'm <span class="gradient-text" data-site-name-first>你的名字</span> <span class="wave">👋</span>
+          </h1>
+          <p class="hero-tagline" data-site-tagline>产品设计 / 用户研究 / 增长探索</p>
+
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+              <span data-site-school>XX 大学 · XX 专业</span>
+            </span>
+            <span class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <span data-site-grade>大四 · 2025 届</span>
+            </span>
+            <span class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span data-site-location>上海 · 北京</span>
+            </span>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="works.html">
+              查看作品
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a class="btn btn-secondary" href="about.html">关于我</a>
+            <a class="btn btn-ghost" href="mailto:your@email.com">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              联系我
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="num">12+</div>
+              <div class="label">完整项目</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">50+</div>
+              <div class="label">用户访谈</div>
+            </div>
+            <div class="hero-stat">
+              <div class="num">5</div>
+              <div class="label">次产品奖项</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual card -->
+        <div class="hero-visual">
+          <div class="hero-shape purple float"></div>
+          <div class="hero-shape pink float float-delay-2"></div>
+          <div class="hero-shape blue float float-delay-1"></div>
+
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="avatar" data-site-avatar>
+                <img src="assets/images/avatar.svg" alt="avatar" />
+              </div>
+              <div class="hero-card-info">
+                <div class="name" data-site-name>你的名字</div>
+                <div class="role" data-site-tagline>产品设计 / 用户研究</div>
+              </div>
+            </div>
+
+            <div class="hero-card-body">
+              <div class="row">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+                <span data-site-school>XX 大学</span>
+              </div>
+              <div class="row">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <a href="#" data-site-email>your@email.com</a>
+              </div>
+              <div class="row">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+                </svg>
+                <a href="#" data-site-github>github.com/yourname</a>
+              </div>
+            </div>
+
+            <div class="hero-card-qr">
+              <div class="qr-img" data-site-wechat-qr>
+                <img src="assets/images/wechat-qr.svg" alt="WeChat QR" />
+              </div>
+              <div class="qr-text">
+                <strong>扫码加我微信</strong>
+                <span>ID: <span data-site-wechat>your-wechat-id</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= Featured Works ============= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header flex reveal">
+        <div class="section-text">
+          <span class="eyebrow">Featured Works</span>
+          <h2>精选作品</h2>
+          <p>过去一年主导的产品项目，从用户研究到落地改版的完整过程。</p>
+        </div>
+        <a class="btn btn-ghost" href="works.html">
+          查看全部
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+      <div id="featured-works" class="reveal"></div>
+    </div>
+  </section>
+
+  <!-- ============= Recent Articles ============= -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header flex reveal">
+        <div class="section-text">
+          <span class="eyebrow">Recent Articles</span>
+          <h2>最新文章</h2>
+          <p>产品方法论、用户研究、增长实践的思考与沉淀。</p>
+        </div>
+        <a class="btn btn-ghost" href="articles.html">
+          查看全部
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+      <div id="recent-articles" class="reveal"></div>
+    </div>
+  </section>
+
+  <!-- ============= Quick Links Strip ============= -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header center reveal">
+        <span class="eyebrow">More to Explore</span>
+        <h2>更多内容</h2>
+      </div>
+      <div class="grid grid-4 stagger" style="margin-top: 32px;">
+        <a class="card" href="albums.html" style="padding: 24px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 12px;">📷</div>
+          <h3 class="card-title" style="margin: 0;">相册</h3>
+          <p class="card-summary">旅行 / 日常 / 设计灵感</p>
+        </a>
+        <a class="card" href="videos.html" style="padding: 24px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 12px;">🎬</div>
+          <h3 class="card-title" style="margin: 0;">视频</h3>
+          <p class="card-summary">设计分享 / 行业观点</p>
+        </a>
+        <a class="card" href="documents.html" style="padding: 24px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 12px;">📄</div>
+          <h3 class="card-title" style="margin: 0;">文档</h3>
+          <p class="card-summary">研究报告 / PRD / 设计规范</p>
+        </a>
+        <a class="card" href="presentations.html" style="padding: 24px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 12px;">📊</div>
+          <h3 class="card-title" style="margin: 0;">PPT</h3>
+          <p class="card-summary">产品方案 / 复盘分享</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= CTA ============= -->
+  <section class="section">
+    <div class="container container-narrow" style="text-align: center;">
+      <div class="reveal" style="padding: 64px 32px; background: var(--c-charcoal); border-radius: 24px; color: white; position: relative; overflow: hidden;">
+        <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;border-radius:50%;background:var(--c-figma-purple);filter:blur(80px);opacity:0.4;"></div>
+        <div style="position:absolute;bottom:-50px;left:-50px;width:200px;height:200px;border-radius:50%;background:var(--c-figma-blue);filter:blur(80px);opacity:0.4;"></div>
+        <h2 style="color: white; margin-bottom: 16px; position: relative;">一起做点有趣的事？</h2>
+        <p style="color: rgba(255,255,255,0.7); margin-bottom: 32px; position: relative;">如果你正在招产品/设计实习生，或者想聊聊产品方法论，欢迎联系我。</p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; position: relative;">
+          <a class="btn btn-gradient" href="mailto:your@email.com">发邮件给我</a>
+          <a class="btn btn-secondary" href="about.html">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= Footer ============= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand" data-site-brand>@yourname</div>
+          <p class="footer-tagline" data-site-tagline>产品设计 / 用户研究 / 增长探索</p>
+          <p class="footer-tagline" style="font-size: 13px;" data-site-bio>热爱用产品和设计的语言解决真实问题。</p>
+        </div>
+        <div>
+          <h4>导航</h4>
+          <ul>
+            <li><a href="works.html">作品</a></li>
+            <li><a href="articles.html">文章</a></li>
+            <li><a href="albums.html">相册</a></li>
+            <li><a href="videos.html">视频</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>资源</h4>
+          <ul>
+            <li><a href="documents.html">文档</a></li>
+            <li><a href="presentations.html">PPT</a></li>
+            <li><a href="add-new.html">添加内容</a></li>
+            <li><a href="about.html">关于</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系</h4>
+          <ul>
+            <li><a href="#" data-site-email>邮箱</a></li>
+            <li><a href="#" data-site-github>GitHub</a></li>
+            <li><a href="#" data-site-linkedin>LinkedIn</a></li>
+            <li><a href="#" data-site-zhihu>知乎</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 <span data-site-brand>@yourname</span>. All rights reserved.</span>
+        <span>Built with ❤️ · Figma-inspired design</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

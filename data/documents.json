@@ -1,0 +1,48 @@
+{
+  "documents": [
+    {
+      "id": "user-research-report",
+      "title": "校园工具用户研究报告",
+      "type": "pdf",
+      "size": "2.4 MB",
+      "date": "2024-05",
+      "url": "https://your-cdn.example.com/research-report.pdf",
+      "preview_url": "https://docs.google.com/viewer?url=https://your-cdn.example.com/research-report.pdf&embedded=true",
+      "cover": "assets/images/doc-cover.svg",
+      "description": "32 位大学生的深度访谈报告，包含用户画像、需求金字塔、产品机会点。"
+    },
+    {
+      "id": "competitor-analysis-doc",
+      "title": "协作工具竞品分析",
+      "type": "docx",
+      "size": "1.8 MB",
+      "date": "2023-11",
+      "url": "https://your-cdn.example.com/competitor-analysis.docx",
+      "preview_url": "https://view.officeapps.live.com/op/embed.aspx?src=https://your-cdn.example.com/competitor-analysis.docx",
+      "cover": "assets/images/doc-cover.svg",
+      "description": "Notion / Coda / 飞书 / 钉钉 6 款协作工具深度对比，60 页。"
+    },
+    {
+      "id": "product-roadmap",
+      "title": "2024 产品 Roadmap",
+      "type": "md",
+      "size": "86 KB",
+      "date": "2024-01",
+      "url": "https://your-cdn.example.com/roadmap.md",
+      "preview_url": "https://your-cdn.example.com/roadmap.md",
+      "cover": "assets/images/doc-cover.svg",
+      "description": "2024 全年产品规划，按季度划分 OKR 和核心项目。"
+    },
+    {
+      "id": "design-spec",
+      "title": "B 端设计规范 v2",
+      "type": "pdf",
+      "size": "5.2 MB",
+      "date": "2024-08",
+      "url": "https://your-cdn.example.com/design-spec.pdf",
+      "preview_url": "https://docs.google.com/viewer?url=https://your-cdn.example.com/design-spec.pdf&embedded=true",
+      "cover": "assets/images/doc-cover.svg",
+      "description": "B 端产品的设计规范：组件库、配色、间距、字体、交互规范。"
+    }
+  ]
+}

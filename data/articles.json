@@ -1,0 +1,52 @@
+{
+  "articles": [
+    {
+      "id": "how-to-do-user-interview",
+      "title": "如何做一次合格的用户访谈",
+      "subtitle": "从招募到分析的全流程",
+      "excerpt": "用户访谈是产品经理最重要的技能之一。本文从招募、提纲设计、现场执行到分析总结，整理了 32 次访谈后的方法论。",
+      "cover": "assets/images/articles/cover-1.svg",
+      "tags": ["用户研究", "方法论"],
+      "date": "2024-10-15",
+      "read_time": "12 分钟阅读",
+      "author": "你的名字",
+      "url": "articles/how-to-do-user-interview.html"
+    },
+    {
+      "id": "pm-toolbox",
+      "title": "产品经理的工具箱 2024",
+      "subtitle": "效率工具与日常实践",
+      "excerpt": "从需求管理、原型设计、文档协作到数据监控，整理我在日常工作中高频使用的 20+ 工具和它们的具体场景。",
+      "cover": "assets/images/articles/cover-2.svg",
+      "tags": ["产品设计", "工具"],
+      "date": "2024-09-20",
+      "read_time": "8 分钟阅读",
+      "author": "你的名字",
+      "url": "articles/pm-toolbox.html"
+    },
+    {
+      "id": "growth-hacks",
+      "title": "增长黑客的 10 个套路",
+      "subtitle": "A/B 测试与漏斗优化实战",
+      "excerpt": "复盘 6 个真实增长项目，提炼出 10 个高频套路：从注册流程、激活、留存到召回，每个套路都附带可复用的方法。",
+      "cover": "assets/images/articles/cover-3.svg",
+      "tags": ["增长", "数据"],
+      "date": "2024-08-12",
+      "read_time": "15 分钟阅读",
+      "author": "你的名字",
+      "url": "articles/growth-hacks.html"
+    },
+    {
+      "id": "landing-page-0-to-1",
+      "title": "从 0 到 1 设计落地页",
+      "subtitle": "B2B SaaS 落地页设计实践",
+      "excerpt": "落地页是产品的第一道门面。本文以一个 B2B SaaS 项目为例，介绍从信息架构、文案到视觉的完整设计流程。",
+      "cover": "assets/images/articles/cover-4.svg",
+      "tags": ["产品设计", "B 端"],
+      "date": "2024-07-01",
+      "read_time": "10 分钟阅读",
+      "author": "你的名字",
+      "url": "articles/landing-page-0-to-1.html"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UX 工作坊 · 校园场 · PPT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/tokens.css" />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/components.css" />
+  <link rel="stylesheet" href="../assets/css/layout.css" />
+  <link rel="stylesheet" href="../assets/css/animations.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/images/avatar.svg" />
+
+  <!-- reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" />
+  <style>
+    .reveal .slides { text-align: left; }
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; letter-spacing: -0.02em; color: #0D0D0D; }
+    .reveal h1 { font-size: 56px; }
+    .reveal h2 { font-size: 40px; }
+    .reveal p, .reveal li { color: #2C2C2C; font-size: 22px; line-height: 1.5; }
+    .reveal .gradient-text { background: linear-gradient(135deg, #A259FF 0%, #FF7262 50%, #1ABCFE 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  </style>
+</head>
+<body data-page="presentations-detail">
+
+  <nav class="top-nav">
+    <div class="container">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark"></span>
+        <span data-site-brand>@yourname</span>
+      </a>
+      <div class="nav-links">
+        <a href="../works.html">作品</a>
+        <a href="../articles.html">文章</a>
+        <a href="../albums.html">相册</a>
+        <a href="../videos.html">视频</a>
+        <a href="../documents.html">文档</a>
+        <a href="../presentations.html">PPT</a>
+        <a href="../about.html">关于</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-compact">
+    <div class="container">
+      <div style="flex: 1;">
+        <a class="back" href="../presentations.html" style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--t-secondary); margin-bottom: 8px;">
+          ← 返回 PPT 列表
+        </a>
+        <h1>UX 工作坊 · 校园场</h1>
+        <p class="sub">面向校园同学的 UX 工作坊 · 32 页</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-bottom: 64px;">
+    <div class="container container-wide">
+      <div class="ppt-viewer">
+        <div class="reveal">
+          <div class="slides">
+            <section>
+              <div class="slide-content">
+                <h1 style="font-size: 64px;">CRM 体验<span class="gradient-text">升级方案</span></h1>
+                <p style="font-size: 24px; color: #6B6B6B;">从用户研究到落地改版 · 2024.09</p>
+              </div>
+            </section>
+
+            <section>
+              <div class="slide-content">
+                <h2>01 · 项目背景</h2>
+                <ul>
+                  <li>核心 CRM 模块日活 8000+ 用户</li>
+                  <li>新手转化率仅 12%</li>
+                  <li>客服每天收到 50+ 投诉</li>
+                  <li>目标：新手转化率提升到 30%+</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <div class="slide-content">
+                <h2>02 · 用户研究</h2>
+                <p><strong>3 周 · 32 位用户 · 1v1 深度访谈</strong></p>
+                <ul>
+                  <li>销售：15 人</li>
+                  <li>运营：8 人</li>
+                  <li>客服：5 人</li>
+                  <li>管理者：4 人</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <div class="slide-content">
+                <h2>03 · 核心洞察</h2>
+                <blockquote style="font-size: 32px; color: #A259FF; border-left: 4px solid #A259FF; padding-left: 24px; margin: 32px 0;">
+                  用户不是不会用，而是不愿意花时间学。
+                </blockquote>
+                <p style="font-size: 20px;">72% 的用户在前 3 分钟就决定要不要继续用</p>
+              </div>
+            </section>
+
+            <section>
+              <div class="slide-content">
+                <h2>04 · 方案概览</h2>
+                <ol>
+                  <li><strong>渐进式引导</strong> · 不一次性灌输</li>
+                  <li><strong>任务模板</strong> · 高频场景一键复用</li>
+                  <li><strong>智能推荐</strong> · 根据角色推荐操作</li>
+                </ol>
+              </div>
+            </section>
+
+            <section>
+              <div class="slide-content">
+                <h2>05 · 实验数据</h2>
+                <p><strong>3 轮灰度 · 每轮 1000 用户</strong></p>
+                <ul>
+                  <li>7 日留存：18% → <span style="color: #0ACF83; font-weight: 700;">31%</span></li>
+                  <li>首次任务完成时长：8min → <span style="color: #0ACF83; font-weight: 700;">4.6min</span></li>
+                  <li>客服工单：50+ → <span style="color: #0ACF83; font-weight: 700;">12</span> /天</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <div class="slide-content" style="text-align: center;">
+                <h1 style="font-size: 56px;">谢谢观看</h1>
+                <p style="font-size: 24px; color: #6B6B6B;">欢迎交流讨论</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: 16px; text-align: center; color: var(--t-secondary); font-size: 13px;">
+        ⌨️ 使用键盘 ← → 切换 · ESC 查看全局视图
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: 0; padding-top: 0;">
+        <span>© 2024 <span data-site-brand>@yourname</span>.</span>
+        <span><a href="../index.html">返回首页</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      center: true,
+      transition: 'slide',
+      width: 1280,
+      height: 720,
+      margin: 0.1
+    });
+  </script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
